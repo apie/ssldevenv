@@ -14,3 +14,5 @@ services:
     links:
       - some_app:webapp
 ```
+
+Certificate will expire 2027/09.
