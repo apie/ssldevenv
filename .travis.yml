@@ -2,7 +2,6 @@ services:
  - docker
 
 script:
- - apt-get install openssl
  - openssl req -new -newkey rsa:4096 -days 365 -nodes -x509
    -subj "/C=JP/ST=Foo/L=Bar/O=FooBar/CN=www.example.com"
    -keyout server.key  -out server.crt
