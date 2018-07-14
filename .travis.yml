@@ -2,7 +2,7 @@ services:
  - docker
 
 script:
- - openssl req -new -newkey rsa:4096 -days 365 -nodes -x509
+ - openssl req -new -newkey rsa:4096 -days 3650 -nodes -x509
    -subj "/C=JP/ST=Foo/L=Bar/O=FooBar/CN=www.example.com"
    -keyout server.key  -out server.crt
  - docker login -u="${DOCKERHUB_ID}" -p="${DOCKERHUB_PASSWORD}"
