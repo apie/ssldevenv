@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-RUN mkdir /app/cert
+RUN mkdir -p /app/cert
 WORKDIR /app/cert
 COPY _nginx.conf /etc/nginx/_nginx.conf
 COPY server.crt /data/certs/server.crt
