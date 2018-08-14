@@ -11,8 +11,7 @@ services:
     image: matoba/ssldevenv
     ports:
       - "443:443"
-    links:
-      - some_app:webapp
-```
+    environment:
+      - LINK_TO=some_app
 
-Certificate will expire 2027/09.
+```
